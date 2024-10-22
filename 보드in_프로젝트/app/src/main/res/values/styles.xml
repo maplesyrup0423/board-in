@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name = "TEXTVIEW_STYLE">
+        <item name = "android:textSize">10dp</item>
+        <!--<item name = "android:text">#감자</item>-->
+        <!--<item name = "android:textColor">@color/colorPrimary</item>-->
+    </style>
+
+    <style name="ROUND_TEXT">
+        <item name = "background">@drawable/round</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#B0E0E6</item>
+        <item name="colorPrimaryDark">#4682B4</item>
+    </style>
+
+</resources>

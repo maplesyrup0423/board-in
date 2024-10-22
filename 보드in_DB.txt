@@ -1,0 +1,55 @@
+ CREATE table users (
+     userName varchar(10) not null,
+     userEmail varchar(255) not null,
+     userPassword varchar(20) not null,
+     primary key(userEmail));
+
+INSERT INTO users VALUES ('고양이', 'cat@naver.com', 'cat1234@');
+INSERT INTO users VALUES ('강아지', 'dog@naver.com', 'dogdog12!');
+INSERT INTO users VALUES ('햄스터', 'hamster@gmail.com', 'hamster4#');
+INSERT INTO users VALUES ('열대어', 'fish@gmail.com', 'zxc123!!');
+INSERT INTO users VALUES ('뱀', 'snake@kakao.com', 'qwerdf12@');
+
+
+create table boardgame(
+   game_name varchar(255) not null,
+   youtube_link varchar(255),
+   genre_couple BOOLEAN,
+   genre_detective BOOLEAN,
+   genre_puzzle BOOLEAN,
+   genre_strategy BOOLEAN,
+   genre_coop BOOLEAN,
+   genre_card BOOLEAN,
+   genre_mafia BOOLEAN,
+   genre_economy BOOLEAN,
+   genre_lie BOOLEAN,
+   genre_handskill BOOLEAN,
+   genre_quickness BOOLEAN,
+   genre_trpg BOOLEAN,
+   min_player int,
+   max_player int,
+   difficulty int,
+   play_time int,
+PRIMARY KEY (game_name)
+);
+
+INSERT INTO boardgame VALUES ('포르투가 1667','https://youtu.be/aRKpbBLbn_A',0,0,0,0,0,0,1,0,1,0,0,0,2,9,2,30);
+INSERT INTO boardgame VALUES ('미니와일드 블루','https://youtu.be/JiGTQXJWM-s',0,0,0,1,0,1,0,0,0,0,0,0,2,4,2,20);
+INSERT INTO boardgame VALUES ('캣타워','https://youtu.be/96bXcaCaqq8',0,0,1,0,0,0,0,0,0,0,0,0,2,4,2,15);
+INSERT INTO boardgame VALUES ('플립','https://youtu.be/SGtZvQ_bOnI',0,0,0,0,0,0,0,0,1,0,0,0,2,6,1,35);
+INSERT INTO boardgame VALUES ('레인 오브 다이스','https://youtu.be/__bT6av841I',0,0,0,1,0,1,0,0,0,0,0,1,4,6,2,40);
+INSERT INTO boardgame VALUES ('팬데믹','https://youtu.be/urllnrCU_G0',0,0,0,1,1,0,0,0,0,0,0,0,2,4,2,45);
+INSERT INTO boardgame VALUES ('하트 오브 크라운','https://youtu.be/H2fmoKiEXXQ',0,0,0,1,0,1,0,0,0,0,0,0,2,4,2,50);
+INSERT INTO boardgame VALUES ('마피아 코드','https://youtu.be/RPAkmd7vMrE',0,1,0,0,0,0,1,0,1,0,0,0,2,4,2,50);
+INSERT INTO boardgame VALUES ('듀얼 클래시 포커','https://youtu.be/H2fmoKiEXXQ',0,1,0,0,1,1,0,0,1,0,0,0,4,4,1,20);
+INSERT INTO boardgame VALUES ('클루','https://youtu.be/7Ium0jpht0g',0,1,0,0,0,0,0,0,0,0,0,0,2,6,2,45);
+INSERT INTO boardgame VALUES ('시네마 코드','https://youtu.be/NKhvDFj4SKg',0,1,0,0,0,0,0,0,0,0,0,0,3,8,1,20);
+INSERT INTO boardgame VALUES ('잉카의 황금','https://youtu.be/IBKEo0NAVqc',0,0,0,1,0,0,0,0,0,0,0,0,3,8,1,30);
+INSERT INTO boardgame VALUES ('포션폭발','https://youtu.be/KDkXaymVQU0',0,0,0,1,0,0,0,0,0,0,0,0,2,4,2,40);
+INSERT INTO boardgame VALUES ('아쿠아티카','https://youtu.be/pmnra4FuUvY',0,0,0,1,0,0,0,0,0,0,0,0,1,4,2,50);
+INSERT INTO boardgame VALUES ('코드네임','https://youtu.be/pPYGAV8MtSM',0,0,0,0,1,0,0,0,0,0,0,0,2,8,1,15);
+INSERT INTO boardgame VALUES ('스컬킹','https://youtu.be/cYB1h4xOonI',0,1,0,1,0,0,0,0,1,0,0,0,2,6,2,30);
+INSERT INTO boardgame VALUES ('젝스님트','https://youtu.be/9q7SQ6ylIug',0,0,0,1,0,1,0,0,0,0,0,0,2,10,1,45);
+INSERT INTO boardgame VALUES ('우노','https://youtu.be/bbtMloNezvM',0,0,0,0,0,1,0,0,0,0,0,0,2,10,1,30);
+INSERT INTO boardgame VALUES ('다빈치코드','https://youtu.be/LkFj3833w14',0,1,0,0,0,0,0,0,0,0,0,0,2,4,1,15);
+INSERT INTO boardgame VALUES ('하나비','https://youtu.be/IWe07PDo2yE',0,0,0,0,1,0,0,0,0,0,0,0,2,5,1,25);

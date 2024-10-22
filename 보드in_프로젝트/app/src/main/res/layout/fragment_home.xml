@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/dice" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnForSearch"
+            app:layout_constraintTop_toBottomOf="@id/searchToolbar"
+            app:layout_constraintBottom_toTopOf="@id/filter_view"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="검색하러 가기"
+            android:textSize="16dp"
+            android:paddingHorizontal="100dp"
+            android:background="@drawable/round_search"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="360dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/roundsqual"
+        android:id="@+id/viewRecommend"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/myToolbar">
+
+        <TextView
+            android:id="@+id/txtRandomRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이 보드게임은 어떠세요?"
+            android:textSize="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtRecommend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="22dp"
+            app:layout_constraintBottom_toTopOf="@id/txtPlayer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/txtPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:text="# 1명"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/txtTime"/>
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:text="# 45분"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/txtPlayer"
+            app:layout_constraintRight_toLeftOf="@id/txtGenre"/>
+
+        <TextView
+            android:id="@+id/txtGenre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:text="# 순발력"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/txtTime"
+            app:layout_constraintRight_toLeftOf="@id/txtDifficulty"/>
+
+        <TextView
+            android:id="@+id/txtDifficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/round"
+            android:text="# 쉬움"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/txtGenre"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

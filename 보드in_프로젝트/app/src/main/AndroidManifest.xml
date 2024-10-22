@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.boardin_2020081014">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 인터넷 권한 선언-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label=" "
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Boardin_2020081014"
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Diary.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".RegisterActivity"
+            android:theme="@style/Theme.Diary.NoActionBar"/>
+        <activity android:name=".MyinfActivity"
+            android:theme="@style/Theme.Diary.NoActionBar"/>
+        <activity android:name=".PersonalInformationCollectionActivity"
+            android:theme="@style/Theme.Diary.NoActionBar"/>
+        <activity android:name=".TermsAndConditionsActivity"
+            android:theme="@style/Theme.Diary.NoActionBar"/>
+    </application>
+
+</manifest>

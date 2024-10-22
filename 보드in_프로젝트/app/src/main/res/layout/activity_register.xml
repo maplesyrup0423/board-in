@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/main">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="서명(닉네임)"
+        android:textColorHint="@color/main"
+        android:backgroundTint ="@color/main"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:hint="이메일"
+        android:textColorHint="@color/main"
+        android:backgroundTint ="@color/main"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnValidate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:text="중복확인"
+        android:textColor="@color/black"
+        android:background="@color/main"
+        app:layout_constraintLeft_toRightOf="@+id/etEmail"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etPasswd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:textColorHint="@color/main"
+        android:backgroundTint ="@color/main"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"/>
+
+    <CheckBox
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswd"/>
+
+<TextView
+    android:layout_marginStart="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/Terms_and_Conditions"
+    android:text="이용약관"
+    android:layout_marginTop="10dp"
+    app:layout_constraintStart_toEndOf="@+id/cb"
+    app:layout_constraintTop_toBottomOf="@+id/etPasswd"
+    android:textColor="@color/main"
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  및  "
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv1"
+        app:layout_constraintStart_toEndOf="@+id/Terms_and_Conditions"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswd"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개인정보 수집"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Personal_information_collection"
+        app:layout_constraintStart_toEndOf="@+id/tv1"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswd"
+        android:textColor="@color/main"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="에 동의합니다."
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv2"
+        app:layout_constraintStart_toEndOf="@+id/Personal_information_collection"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswd"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnMembership"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="회원가입"
+        android:textColor="@color/main"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

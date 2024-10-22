@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/main">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개인정보변경"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="150dp"
+        android:text="닉네임"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="@color/main"
+        android:ems="10"
+        android:hint="닉네밍(서명)"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:text="비밀번호 변경"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <EditText
+        android:id="@+id/etPasswd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="@color/main"
+        android:ems="10"
+        android:hint="기존 비밀번호"
+        android:inputType="textPassword"
+        android:textColorHint="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+    <EditText
+        android:id="@+id/etNewPasswd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="@color/main"
+        android:ems="10"
+        android:hint="새로운비밀번호"
+        android:inputType="textPassword"
+        android:textColorHint="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPasswd" />
+
+    <EditText
+        android:id="@+id/etNewPasswd2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="@color/main"
+        android:ems="10"
+        android:hint="새로운비밀번호확인"
+        android:inputType="textPassword"
+        android:textColorHint="@color/main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewPasswd" />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/main"
+        android:text="확인"
+        android:id="@+id/btnOK"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNewPasswd2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Boardin_2020081014" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/yellow_400</item>
+        <item name="colorPrimaryVariant">@color/yellow_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/yellow_600</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="Theme.Diary.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+</resources>
