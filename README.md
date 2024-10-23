@@ -17,3 +17,6 @@
 - **개발 환경**: Android Studio
 - **프로그래밍 언어**: Java
 - **데이터베이스**: XAMPP (Apache, MySQL)
+
+## 시연 영상
+- [보드 in 시연 영상](https://www.youtube.com/watch?v=l5RDrj3wDgA&t=8s)
